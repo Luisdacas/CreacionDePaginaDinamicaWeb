@@ -1,0 +1,92 @@
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">¡Únete al Hellfire Club!</h2>
+
+                <form id="formularioCompleto" class="text-start">
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label text-white">Nombre</label>
+                        <input class="form-control" id="fullName" type="text" placeholder="Ej: Eddie Munson" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Correo Electrónico</label>
+                        <input class="form-control" id="email" type="email" placeholder="tu-correo@hawkins.com"
+                            required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-white">Contraseña Secreta</label>
+                        <input class="form-control" id="password" type="password" placeholder="Mínimo 8 caracteres"
+                            required maxlength="20" pattern=".{8,}" />
+                        <div class="form-text text-white-50">
+                            Debe tener al menos 8 caracteres.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="level" class="form-label text-white">Nivel de Poder que tienes (1-100)</label>
+                        <input class="form-control" id="level" type="number" placeholder="11" min="1" max="100" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="character" class="form-label text-white">Personaje Favorito</label>
+                        <select class="form-select" id="character" required>
+                            <option value="" selected disabled>-- Elige tu favorito --</option>
+                            <option value="eleven">Eleven</option>
+                            <option value="steve">Steve Harrington</option>
+                            <option value="dustin">Dustin Henderson</option>
+                            <option value="max">Max Mayfield</option>
+                            <option value="eddie">Eddie Munson</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label text-white">¿Qué esperas de la Temporada 5?</label>
+                        <textarea class="form-control" id="message" rows="3"
+                            placeholder="Espero que Steve sobreviva..."></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2"> <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
+                            Unirme
+                        </button>
+                    </div>
+                    <br>
+                    <!-- Button trigger modal -->
+                     <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ¿Guardar esta información?
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">¿Guardar tu informacion del Club?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿ Quisieras actualizar y Guardar nueva información para el Club ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <a href="https://strangerthings.fandom.com/wiki/Hellfire_Club" class="btn btn-primary">Guardar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
